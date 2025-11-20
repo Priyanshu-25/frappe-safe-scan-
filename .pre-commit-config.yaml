@@ -1,0 +1,8 @@
+repos:
+  - repo: local
+    hooks:
+      - id: frappe-safe-scan
+        name: Frappe Security Scan
+        entry: python frappe_safe_scan.py .
+        language: system
+        pass_filenames: false
