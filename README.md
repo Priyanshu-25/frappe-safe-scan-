@@ -23,3 +23,39 @@ This tool is built to help teams maintain secure, high-quality code across Frapp
 
 ## 📦 Installation
 
+---
+
+## ▶️ Usage
+
+
+Example:
+
+
+---
+
+## 🧪 Run Demo
+
+
+Expected output:
+
+- Hardcoded password
+- SQL injection possibility
+- Usage of `eval()`
+
+---
+
+## 🧩 Integrate with Pre-Commit
+
+Add to `.pre-commit-config.yaml`:
+
+```yaml
+repos:
+  - repo: local
+    hooks:
+      - id: frappe-safe-scan
+        name: Frappe Security Scan
+        entry: python frappe_safe_scan.py .
+        language: system
+        pass_filenames: false
+
+
